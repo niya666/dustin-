@@ -11,15 +11,6 @@ function preload(){
 
 	dustbinImg = loadImage("dustbin.png");
 	paperImg = loadImage("paper.png");
-
-	dustbinImg = addImage("dustbin.png");
-	paperImg = addImage("paper.png");
-
-	dustbin.loadImage("dustbin.png");
-	paper.addImage("paper.png");
-	
-	dustbin.loadImage("dustbin.png");
-	paper.loadImage("paper.png");
 }
 
 
@@ -72,7 +63,7 @@ function draw() {
 function keyPressed() {
   	if (keyCode === UP_ARROW) {
 
-		Matter.Body.applyForce(ball,ball.position,{x:8130,y:-145} );
+		Matter.Body.applyForce(ball,ball.position,{x:130,y:-145} );
     
   	}
 }
